@@ -1,0 +1,263 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+* {
+    /* box-sizing: border-box;
+    border: solid 1px red; */
+    margin: 0px;
+    padding: 0px;
+}
+main {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: center;
+    align-items: center;
+}
+p {
+    margin-block-start: 0em;
+}
+section {
+    background-color: white;
+}
+
+nav {
+    background-color: #EAC926;
+    padding-bottom: 1em;
+}
+main > img {
+    max-width: 100%;
+    width: 100%;
+}
+main nav img {
+    margin: 0px;
+    width: 35%;
+}
+main nav div span.searchnav {
+    width: 58%
+}
+main nav button i {
+    padding: 1px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0px;
+    list-style-type: none;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+a {
+    text-decoration:none
+}
+.ultimasVistas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px
+}
+.ultimasVistas article img {
+    width: 100%;
+    height: 60%;
+
+}
+.ultimasVistas, .titulares {
+    font-size: 24px;
+}
+.ultimasVistas > article {
+    position: relative;
+    border: solid 1px #ebebeb;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: left;
+    flex-wrap: wrap;
+}
+.ultimasVistas article img {
+    padding: 0px;
+}
+article > i {
+    display: block;
+    font-size: 17px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 45px;
+}
+.precios {
+    font-size: 18px;
+    width: 30%;
+}
+.descuentos {
+    font-size: 16px;
+    width: 60%;
+    color: #39b54a;
+}
+.descripciones {
+    width: 100%;
+    font-size: 16px;
+    color: #666;
+    padding: 5px;
+}
+
+section .ultimasVistas div p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main nav i {
+    size: 2em;
+    padding: 10px;
+}
+footer {
+    text-align: center;
+    text-justify: inter-word;
+    
+}
+footer section {
+    font-size: 12px;
+    color: #666;
+    padding-bottom: 10px;
+
+}
+footer h4 {
+    font-size: 16px;
+    color: #666;
+    margin: 0px;
+}
+footer section i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-top: 2em;
+    text-justify: inter-word;
+}
+main nav div.burger-menu {
+    font-size: 24px;
+    text-align: center;
+}
+
+main nav div.burger-menu i {
+    border-radius: 5px;
+    color: #ebebeb;
+    background-color: #1259c3;
+    width: fit-content;
+}
+
+.compraCuotas {
+    text-align: center;
+}
+.descripciones, .site, .loginNavbar {
+    display: none;
+}
+
+/* navegacion en tablets */
+@media (361px <= width <= 768px) {
+    .ultimasVistas{
+        background-color: #ebebeb;
+        margin: 0px;
+    }
+    article {
+        width: 45%;
+    }
+    .descuentos {
+        width: 50%;
+    }
+    .precios {
+        width: 40%;
+    }
+    .descripciones, .site, .loginNavbar {
+        display: block;
+    }
+    main nav div.burger-menu {
+        display: none;
+    }
+    .ultimasVistas article i {
+        right: 5px;
+    }
+}
+
+/* navegacion desktop */
+@media (width >= 769px) {  
+    main {
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    main nav div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    main nav img {
+        margin: 0px;
+        width: 27%;
+        padding: 5px;
+    }
+    main nav div span.searchnav {
+        margin: 0px;
+        padding: 0px;
+        width: 26%;
+    }
+    .searchnav input {
+        position: relative;
+        width: 85%;
+        padding: 5px;
+        border-radius: 5px;
+        border-color: #ebebeb;
+    }
+    .searchnav i {
+        padding: 5px;
+    }
+    .compraCuotas {
+        width: 45%
+    }
+    main nav > span {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+
+    }
+    article {
+        width: 22%;
+        height: 10%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .precios {
+        width: 40%;
+    }
+    .descripciones, .site, .loginNavbar {
+        display: block;
+    }
+    main nav div.burger-menu {
+        display: none;
+    }
+    .ultimasVistas {
+        margin: 0px;
+        padding: 0px;
+        background-color: #ebebeb;
+        justify-content: space-between;
+    }
+}

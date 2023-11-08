@@ -1,0 +1,50 @@
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.registerForm > input {
+    padding: 5px;
+    border-radius: 5px;
+    border: solid #ebebeb;
+    width: 70%;
+}
+
+.registerForm button {
+    box-sizing: solid 1px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #1259c3;
+    width: 50%;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+.interests {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+    gap: 10px;
+    align-self: flex-start;
+}
+
+.interests input {
+    width: 30px;
+}
+
+label {
+    align-self: self-start;
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #666;
+}
+/* .registerForm input:focus {
+    border: solid 3px #1259c3;
+} */
